@@ -1,9 +1,9 @@
 cask "ioruba" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.7.1"
-  sha256 arm:   "67be5d7e16f79e876a9951f8bd64747286ea978076144f5600dfce3159f2c2aa",
-         intel: "e722e55af0679a169c7e3e7c742e2444526818ac97909aa58854233b4440bfcb"
+  version "1.8.0"
+  sha256 arm:   "69fb4788ea214ea44f98df99830e3ba662462cca30a1e0fdc5592ca89c62787b",
+         intel: "b278c63610228f5891e715ec8fd40caaf1f2d1a57ea7e087694fb54f5720f073"
 
   url "https://github.com/bernardopg/ioruba/releases/download/v#{version}/Ioruba_#{version}_#{arch}.app.tar.gz",
       verified: "github.com/bernardopg/ioruba/"
