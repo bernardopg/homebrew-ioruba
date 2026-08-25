@@ -1,11 +1,11 @@
 cask "ioruba" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.8.3"
-  sha256 arm:   "2826226c4265e7e111f6ebf91b79ed1040279a0a52e01d0fa9c80bd597fab88d",
-         intel: "4d17abfd8f1accb35866f996d4f2c994060573f31040fb837fe7bebfbabd1ef6"
+  version "1.8.4"
+  sha256 arm:   "e3cb63338c391cf7e1a14462d0677d99f55098fc0fd467656c396264e8442ec5",
+         intel: "50fb76d573e37a714021a0e8e6401e21cf5f7018f92663843a23d0c74e127261"
 
-  url "https://github.com/bernardopg/ioruba/releases/download/v#{version}/Ioruba_#{version}_#{arch}.app.tar.gz",
+  url "https://github.com/bernardopg/ioruba/releases/download/v1.8.4/Ioruba_1.8.4_#{arch}.app.tar.gz",
       verified: "github.com/bernardopg/ioruba/"
   name "Ioruba"
   desc "Tactile audio mixer for Arduino-based control surfaces"
@@ -15,8 +15,8 @@ cask "ioruba" do
 
   app "Ioruba.app"
 
-  # The bundle is unsigned and unnotarized, so Gatekeeper would refuse to open
-  # it. Drop this once the release is signed and notarized.
+  # The bundle is unsigned and unnotarized by project policy, so Gatekeeper
+  # would refuse to open it.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Ioruba.app"],
