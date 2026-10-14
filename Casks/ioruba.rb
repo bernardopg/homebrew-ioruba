@@ -1,11 +1,11 @@
 cask "ioruba" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.9.5"
-  sha256 arm:   "82549d835fd0eb2d47977332bb51e2a5d67c23b3c73c02ac772c9777d7294014",
-         intel: "a679e80c26504f692157b5f3f7743bd4a878d94dd818d4bf48867e1347a5c03f"
+  version "1.9.6"
+  sha256 arm:   "60dca38b420723ae18427d9934786f597b072b79e3c20070f2a33716ec21bce4",
+         intel: "60a8e266b1c3dd7fd9d4552cb1513c84a0131cbd31ddded5c026210c8e91c668"
 
-  url "https://github.com/bernardopg/ioruba/releases/download/v1.9.5/Ioruba_1.9.5_#{arch}.app.tar.gz",
+  url "https://github.com/bernardopg/ioruba/releases/download/v1.9.6/Ioruba_1.9.6_#{arch}.app.tar.gz",
       verified: "github.com/bernardopg/ioruba/"
   name "Ioruba"
   desc "Tactile audio mixer for Arduino-based control surfaces"
